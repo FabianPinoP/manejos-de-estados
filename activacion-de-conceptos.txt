@@ -1,0 +1,70 @@
+cual es la diferencia entre una funcion declarativa y una funcion de expersion?
+
+ la diferencia entre una función declarativa y una función de expresión se refiere principalmente a 
+ cómo se definen y cómo se comportan en el código.
+
+ Función Declarativa:
+  Una función declarativa es aquella que se define utilizando la palabra clave function seguida de un 
+  nombre de función. La definición de la función se "eleva" durante la fase de compilación, lo que significa 
+  que puede ser utilizada antes de su declaración en el código.
+
+  ej: function suma(a, b) {
+        return a + b;
+      }
+
+
+Función de Expresión:
+  Una función de expresión es aquella en la que una función se asigna a una variable u otra estructura de datos. 
+  Este tipo de función no es "elevada" durante la fase de compilación, lo que significa que solo puede ser utilizada 
+  después de la declaración en el código.
+
+  ej: const suma = function(a, b) {
+        return a + b;
+      }
+
+
+pregunta dos cual es el error en el codigo? 
+
+falta agregar el fragment para que se pueda renderizar el componente o el div
+
+import Producto from './Producto';
+
+function App() {
+  return (
+    <>
+      <Producto />
+      <Producto />
+      <Producto />
+    </>
+  );
+}
+
+
+cual es la convencion para nombrar los componentes en react?
+
+  PascalCase para Nombres de Componentes: Los nombres de componentes en React suelen seguir la convención 
+  PascalCase, donde cada palabra comienza con una letra mayúscula y no se utiliza ningún guión o espacio. 
+  Esto ayuda a distinguir los componentes de los elementos HTML y otros elementos en el código JSX.
+
+  Ejemplos:
+
+  MiComponente
+  ProductoDetalle
+  BarraNavegacion
+
+  Nombres Descriptivos: Los nombres de los componentes deben ser descriptivos y reflejar la función o propósito 
+  del componente en la interfaz de usuario. Esto hace que el código sea más legible y comprensible para otros 
+  desarrolladores.
+
+  Singular o Plural: En general, es una buena práctica utilizar nombres en singular para los componentes cuando 
+  representan un elemento único, como Producto o Usuario. Sin embargo, cuando un componente representa una 
+  colección de elementos, como una lista de productos, podría ser apropiado utilizar el plural, como Productos.
+
+para que sirven los props?
+
+  En React, los "props" (abreviatura de "properties" o propiedades en español) son un mecanismo fundamental que permite 
+  pasar datos y configuraciones de un componente padre a un componente hijo.
+
+pregunta 5 detectar error en el sgueinte condigo
+
+falta exportar la funcion para que se pueda importar en otro componente
